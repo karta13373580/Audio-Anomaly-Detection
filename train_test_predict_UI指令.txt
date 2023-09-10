@@ -1,0 +1,23 @@
+
+train指令
+
+python main.py --config MIMII_p6_dB_pump_id_00_yaml/config_MIMII_p6_dB_pump_id_00_normal_abnormal_train.yml --str_kwargs mode=train
+
+threshold指令
+
+python main.py --config MIMII_p6_dB_pump_id_00_yaml/config_MIMII_p6_dB_pump_id_00_normal_abnormal_threshold.yml --str_kwargs mode=threshold
+
+
+test指令
+
+python main.py --config MIMII_p6_dB_pump_id_00_yaml/config_MIMII_p6_dB_pump_id_00_normal_abnormal_test.yml --str_kwargs mode=test
+
+
+predict指令
+
+python main.py --config MIMII_p6_dB_pump_id_00_yaml/config_MIMII_p6_dB_pump_id_00_normal_abnormal_predict.yml --str_kwargs mode=predict
+
+
+predict_gui指令
+
+python start.py --config MIMII_p6_dB_pump_id_00_yaml/config_MIMII_p6_dB_pump_id_00_normal_abnormal_gui.yml --str_kwargs mode=predict_gui
