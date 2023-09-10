@@ -1,0 +1,169 @@
+# parameters configuration
+## mode=predict main.py filepath changes inputs
+
+# mode: predict
+# root: ./data/predict(noise0420)/
+
+mode: predict_gui
+# root: ./data/predict(noise0420)/
+
+#experiment
+# root: ./data/MIMII_p6_dB_pump_id_00_normal_abnormal/
+
+#paper
+# root: ./data/noise(0.2)/0412/
+# root: ./data/noise(0.2)/0420/
+# root: ./data/noise(0.2)/0820/
+
+# root: ./data/noise(0.2)/0915/
+# root: ./data/noise(0.2)/0916/
+# root: ./data/noise(0.2)/0917/
+# root: ./data/noise(0.2)/0923/
+# root: ./data/noise(0.2)/0924/
+
+#fan
+# root: ./data/paper_mimii_dataset/fan/id00/
+# root: ./data/paper_mimii_dataset/fan/id02/
+# root: ./data/paper_mimii_dataset/fan/id04/
+# root: ./data/paper_mimii_dataset/fan/id06/
+
+#pump
+root: ./data/paper_mimii_dataset/pump/id00/
+# root: ./data/paper_mimii_dataset/pump/id02/
+# root: ./data/paper_mimii_dataset/pump/id04/
+# root: ./data/paper_mimii_dataset/pump/id06/
+
+#slider
+# root: ./data/paper_mimii_dataset/slider/id00/
+# root: ./data/paper_mimii_dataset/slider/id02/
+# root: ./data/paper_mimii_dataset/slider/id04/
+# root: ./data/paper_mimii_dataset/slider/id06/
+
+#valve
+# root: ./data/paper_mimii_dataset/valve/id00/
+# root: ./data/paper_mimii_dataset/valve/id02/
+# root: ./data/paper_mimii_dataset/valve/id04/
+# root: ./data/paper_mimii_dataset/valve/id06/
+
+predefined_dataset: null
+classes: ["normal", "abnormal"]
+max_samples: null
+batch_size: 16
+num_workers: 1
+device: cuda
+sample_rate: 16000 
+lr: 1e-3
+in_chans: 4 
+input_height: 64
+latent_dim: 256
+generator_feature_dim: 64 
+discriminator_feature_dim: 64 
+adversarial_weight: 1
+reconstruction_weight: 50
+encoding_weight: 1
+seed: 0
+checkpoint_path: weight/final_version_paper_mimii/proposed/pump_id00_0.16801874148845664/checkpoints/epoch=230-step=20328-val_loss=133.4315.ckpt
+early_stopping: False
+patience: 3
+default_root_dir: save/
+gpus: -1
+precision: 32
+max_epochs: 600
+threshold: 0.18778080484453227
+web_interface: False
+examples: []
+tuning_test: False
+cpu_resources_per_trial: 1
+gpu_resources_per_trial: 0.25
+num_samples: -1
+is_bn: True
+#====================================== extractor ======================================
+backbone: resnext_wsl
+extractor_in_chans: 4
+cnn_layers: ('relu1_1', 'bolck2_3', 'bolck3_4', 'bolck4_23')
+upsample: bilinear
+is_agg: True
+kernel_size: [4, 4]
+stride: [4, 4]
+dilation: 1
+featmap_size: [64, 64]
+#===================================================================================
+
+# transforms configuration (mimii:max_waveform_length: 130816 425640)
+transforms_config:
+  train:
+    PadWaveform:
+      max_waveform_length: 130816
+    MelSpectrogram:
+      sample_rate: 16000
+      n_mels: 64
+      n_fft: 1024
+      hop_length: 512
+    AmplitudeToDB: null
+
+  val:
+    PadWaveform:
+      max_waveform_length: 130816
+    MelSpectrogram:
+      sample_rate: 16000
+      n_mels: 64
+      n_fft: 1024
+      hop_length: 512
+    AmplitudeToDB: null
+
+  test:
+    PadWaveform:
+      max_waveform_length: 130816
+    MelSpectrogram:
+      sample_rate: 16000
+      n_mels: 64
+      n_fft: 1024
+      hop_length: 512
+    AmplitudeToDB: null
+
+  predict:
+    PadWaveform:
+      max_waveform_length: 130816
+    MelSpectrogram:
+      sample_rate: 16000
+      n_mels: 64
+      n_fft: 1024
+      hop_length: 512
+    AmplitudeToDB: null
+
+# target transforms configuration
+target_transforms_config:
+  train: null
+
+  val: null
+
+  test: null
+
+  predict: null
+
+# optimizers configuration
+optimizers_config:
+  Adam:
+    betas:
+      - 0.9
+      - 0.999
+    eps: 1e-08
+    weight_decay: 0
+    amsgrad: False
+
+# learning rate schedulers configuration
+lr_schedulers_config:
+  CosineAnnealingLR:
+    T_max: 10
+
+#  hyperparameter space configuration
+hyperparameter_space_config:
+  lr:
+    uniform:
+      lower: 1e-4
+      upper: 1e-1
+
+  max_epochs:
+    randint:
+      lower: 100
+      upper: 500
