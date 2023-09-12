@@ -41,7 +41,7 @@ pip install -r requirements.txt
 ## 建立資料集
 請先建立一個data資料夾，資料擺放方式如下: 
 ```
->嗨
->>嗨
->>>嗨
+  嗨
+    嗨
+      嗨
 ```
