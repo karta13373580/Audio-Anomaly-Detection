@@ -37,3 +37,9 @@ MIMII資料集: <https://hdl.handle.net/11296/xdh5fm>
 ```
 pip install -r requirements.txt
 ```
+## 建立資料集
+請先建立一個data資料夾，資料擺放方式如下: 
+
+嗨
+  嗨
+    嗨
