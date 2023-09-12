@@ -88,7 +88,9 @@ python main.py --config MIMII_p6_dB_pump_id_00_yaml/config_MIMII_p6_dB_pump_id_0
 python main.py --config MIMII_p6_dB_pump_id_00_yaml/config_MIMII_p6_dB_pump_id_00_normal_abnormal_test.yml --str_kwargs mode=test
 ```
 ## UI介面
+<img src="https://github.com/karta13373580/Audio-Anomaly-Detection/blob/main/result_photo/github_photo/UI%E5%BD%B1%E7%89%87%20(online-video-cutter.com).gif">
+
+### 啟用UI
 ```
 python start.py --config MIMII_p6_dB_pump_id_00_yaml/config_MIMII_p6_dB_pump_id_00_normal_abnormal_gui.yml --str_kwargs mode=predict_gui
 ```
-
