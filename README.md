@@ -10,7 +10,6 @@
 前處理上將聲音轉換成同時帶有時間與頻率特徵的梅爾頻譜，並在GANomaly中的Encoder添加Channel Attention Module與Halo Attention，增加通道之間的關聯性，以及強化梅爾頻譜的空間特徵，藉此增加經過編碼後所得到的潛在向量資訊，接著引入Skip Connection 架構，捕捉Encoder下採樣過程中的多尺度影像特徵，將這些資訊輸入至Decoder，使其能夠重建更高品質的影像。最後模型計算出來的正常結果透過Kernel Density Estimation映射於高斯分布，找出較佳的閥值。實驗結果在MIMII工業聲音的公開資料集進行檢測，在風扇、泵、滑軌和閥門類別平均AUC分別獲得了84.94%、86.79%、75.24%、73.62%。
 
 ## 實驗結果
-
 MIMII資料集: <https://hdl.handle.net/11296/xdh5fm>
 
 | Machine ID | Fan | Pump | Slider | Valve | Average |
@@ -21,7 +20,6 @@ MIMII資料集: <https://hdl.handle.net/11296/xdh5fm>
 | 06 | 96.25% | 86.79% | 62.55% | 73.92% | 73.62% |
 
 ## 與其他論文實驗比較
-
 | Model | Fan | Pump | Slider | Valve |
 | :----: | :----: | :----: | :----: | :----: |
 | Autoencoder | 65.83% | 72.89% | 84.76% | 66.28% |
@@ -30,3 +28,6 @@ MIMII資料集: <https://hdl.handle.net/11296/xdh5fm>
 | Contrastive Learning | 80.11% | 70.12% | 77.43% | 84.17% |
 | Baseline-GANomaly | 80.34% | 83.90% | 72.70% | 68.51% |
 | Proposed | 84.94% | 86.79% | 75.24% | 73.62% |
+
+## 與其他論文實驗比較
+程式碼區塊return shell_exec("echo $input | $markdown_script");
