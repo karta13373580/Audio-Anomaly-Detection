@@ -64,7 +64,7 @@ pip install -r requirements.txt
       -00000003.wav
 ```
 ## 模型使用
-### 參數配置
+### yml檔參數配置
 
 
 | 模型參數 | 描述 | 聲音參數 | 描述 |
@@ -87,3 +87,8 @@ python main.py --config MIMII_p6_dB_pump_id_00_yaml/config_MIMII_p6_dB_pump_id_0
 ```
 python main.py --config MIMII_p6_dB_pump_id_00_yaml/config_MIMII_p6_dB_pump_id_00_normal_abnormal_test.yml --str_kwargs mode=test
 ```
+## UI介面
+```
+python start.py --config MIMII_p6_dB_pump_id_00_yaml/config_MIMII_p6_dB_pump_id_00_normal_abnormal_gui.yml --str_kwargs mode=predict_gui
+```
+
