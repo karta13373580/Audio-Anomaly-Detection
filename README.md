@@ -68,10 +68,10 @@ pip install -r requirements.txt
 
 
 | 模型參數 | 描述 | 聲音參數 | 描述 |
-| :----: | :----: | :----: | :----: |
+| :---- | :---- | :---- | :---- |
 | root | 資料集路徑 | sample_rate | 聲音每秒採樣率 |
 | checkpoint_path | 模型權重路徑 | max_waveform_length | 模型所要使用的聲音最大採樣率 |
-| threshold | 96.25% | 測試階段需定義閥值 | n_mels | 梅爾頻譜轉換頻帶 |
+| threshold | 測試階段需定義閥值 | n_mels | 梅爾頻譜轉換頻帶 |
 | early_stopping | 是否啟用模型提早結束 | n_fft | 快速傅立葉轉換的Window大小 |
 | max_epochs | 定義模型最大訓練次數 | hop_length | Window跳躍長度 |
 
