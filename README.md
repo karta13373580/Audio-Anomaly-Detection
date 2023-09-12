@@ -64,6 +64,23 @@ pip install -r requirements.txt
       -00000003.wav
 ```
 ## 模型使用
+### 參數配置
+
+
+| 參數 | 描述 |
+| :----: | :----: |
+| root | 資料集路徑 |
+| checkpoint_path | 模型權重路徑 |
+| threshold | 96.25% | 測試階段需定義閥值 |
+| early_stopping | 是否啟用模型提早結束 |
+| max_epochs | 定義模型最大訓練次數 |
+| sample_rate | 聲音每秒採樣率 |
+| max_waveform_length | 模型所要使用的聲音最大採樣率 |
+| n_mels | 梅爾頻譜轉換頻帶 |
+| n_fft | 快速傅立葉轉換的Window大小 |
+| hop_length | Window跳躍長度 |
+
+
 ### 訓練
 ```
 python main.py --config MIMII_p6_dB_pump_id_00_yaml/config_MIMII_p6_dB_pump_id_00_normal_abnormal_train.yml --str_kwargs mode=train
