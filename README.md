@@ -29,7 +29,7 @@ MIMII資料集: <https://hdl.handle.net/11296/xdh5fm>
 | Baseline-GANomaly | 80.34% | 83.90% | 72.70% | 68.51% |
 | Proposed | 84.94% | 86.79% | 75.24% | 73.62% |
 
-## 與其他論文實驗比較
+## 實驗環境
 * CUDA: 11.3
 * Python: 3.8.0
 * Pytorch: 1.12.0
