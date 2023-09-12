@@ -41,25 +41,25 @@ pip install -r requirements.txt
 ## 建立資料集
 請先建立一個data資料夾，資料擺放方式如下: 
 ```
-dataset/
-  train/
-    normal/
+-dataset/
+  -train/
+    -normal/
       -00000000.wav
       -00000001.wav
       -00000002.wav
-  val/
-    normal/
+  -val/
+    -normal/
       -00000003.wav
-  thr/
-    normal/
+  -thr/
+    -normal/
       -00000004.wav
-    abnormal/
+    -abnormal/
       -00000000.wav
       -00000001.wav
       -00000002.wav
-  test/
-    normal/
+  -test/
+    -normal/
       -00000005.wav
-    abnormal/
+    -abnormal/
       -00000003.wav
 ```
