@@ -95,4 +95,4 @@ python main.py --config MIMII_p6_dB_pump_id_00_yaml/config_MIMII_p6_dB_pump_id_0
 python start.py --config MIMII_p6_dB_pump_id_00_yaml/config_MIMII_p6_dB_pump_id_00_normal_abnormal_gui.yml --str_kwargs mode=predict_gui
 ```
 ## 參考資料
-* 
+* <https://github.com/fastyangmh/AudioGANomaly>
