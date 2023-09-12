@@ -50,24 +50,16 @@ dataset/
   val/
     normal/
       -00000003.wav
-      -00000004.wav
-      -00000005.wav
   thr/
     normal/
-      -00000006.wav
-      -00000007.wav
-      -00000008.wav
+      -00000004.wav
     abnormal/
       -00000000.wav
       -00000001.wav
       -00000002.wav
   test/
     normal/
-      -00000009.wav
-      -00000010.wav
-      -00000011.wav
+      -00000005.wav
     abnormal/
-      -00000000.wav
-      -00000001.wav
-      -00000002.wav
+      -00000003.wav
 ```
