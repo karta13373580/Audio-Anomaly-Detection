@@ -30,6 +30,8 @@ MIMII資料集: <https://hdl.handle.net/11296/xdh5fm>
 | Proposed | 84.94% | 86.79% | 75.24% | 73.62% |
 
 ## 與其他論文實驗比較
+*1
+*2
 ```
-example code:
+pip install -r requirements.txt
 ```
