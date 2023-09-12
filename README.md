@@ -96,3 +96,6 @@ python start.py --config MIMII_p6_dB_pump_id_00_yaml/config_MIMII_p6_dB_pump_id_
 ```
 ## 參考資料
 * <https://github.com/fastyangmh/AudioGANomaly>
+* <https://github.com/lucidrains/halonet-pytorch>
+* <https://blog.csdn.net/weixin_38241876/article/details/109853433>
+* <https://blog.csdn.net/pipisorry/article/details/53635895>
