@@ -4,4 +4,6 @@
 ##### Unsupervised Abnormal Industrial Equipment Sounds Detection Using Channel and Spatial Attention on GANomaly
 
 ## 方法
-![image](https://github.com/karta13373580/Audio-Anomaly-Detection/blob/main/result_photo/github_photo/1.PNG)
+<div align=center>
+<img src="https://github.com/karta13373580/Audio-Anomaly-Detection/blob/main/result_photo/github_photo/1.PNG">
+</div>
