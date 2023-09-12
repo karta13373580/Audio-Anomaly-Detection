@@ -11,7 +11,7 @@
 
 ## 實驗結果
 
-MIMII資料集<https://hdl.handle.net/11296/xdh5fm>
+MIMII資料集: <https://hdl.handle.net/11296/xdh5fm>
 
 | Machine ID | Fan | Pump | Slider | Valve | Average |
 | :----: | :----: | :----: | :----: | :----: | :----: |
@@ -19,3 +19,14 @@ MIMII資料集<https://hdl.handle.net/11296/xdh5fm>
 | 02 | 90.03% | 76.47% | 82.01% | 98.33% | 86.79% |
 | 04 | 80.31% | 86.85% | 59.60% | 55.83% | 75.24% |
 | 06 | 96.25% | 86.79% | 62.55% | 73.92% | 73.62% |
+
+## 與其他論文實驗比較
+
+| Model | Fan | Pump | Slider | Valve |
+| :----: | :----: | :----: | :----: | :----: |
+| Autoencoder | 65.83% | 72.89% | 84.76% | 66.28% |
+| LSTM- Autoencoder | 67.32% | 73.94% | 84.99% | 67.82% |
+| Dictionary Learning-Autoencoder | 79.60% | 84.91% | 82.00% | 72.33% |
+| Contrastive Learning | 80.11% | 70.12% | 77.43% | 84.17% |
+| Baseline-GANomaly | 80.34% | 83.90% | 72.70% | 68.51% |
+| Proposed | 84.94% | 86.79% | 75.24% | 73.62% |
