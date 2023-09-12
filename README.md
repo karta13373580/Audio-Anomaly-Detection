@@ -30,4 +30,4 @@ MIMII資料集: <https://hdl.handle.net/11296/xdh5fm>
 | Proposed | 84.94% | 86.79% | 75.24% | 73.62% |
 
 ## 與其他論文實驗比較
-程式碼區塊return shell_exec("echo $input | $markdown_script");
+example code:(    1)
