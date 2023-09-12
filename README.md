@@ -31,9 +31,9 @@ MIMII資料集: <https://hdl.handle.net/11296/xdh5fm>
 
 ## 與其他論文實驗比較
 * CUDA: 11.3
-* cuDnn: 8302
 * Python: 3.8.0
 * Pytorch: 1.12.0
+* pytorch-lightning==1.6.1
 ```
 pip install -r requirements.txt
 ```
