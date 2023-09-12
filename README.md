@@ -63,3 +63,7 @@ pip install -r requirements.txt
     -abnormal/
       -00000003.wav
 ```
+## 訓練
+```
+python main.py --config MIMII_p6_dB_pump_id_00_yaml/config_MIMII_p6_dB_pump_id_00_normal_abnormal_train.yml --str_kwargs mode=train
+```
