@@ -64,8 +64,6 @@ pip install -r requirements.txt
       -00000003.wav
 ```
 ## 模型使用
-### 參數修改
-請找到對應的mode的yaml檔修改資料集路徑
 ### 訓練
 ```
 python main.py --config MIMII_p6_dB_pump_id_00_yaml/config_MIMII_p6_dB_pump_id_00_normal_abnormal_train.yml --str_kwargs mode=train
