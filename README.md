@@ -33,7 +33,7 @@ MIMII資料集: <https://hdl.handle.net/11296/xdh5fm>
 * CUDA: 11.3
 * Python: 3.8.0
 * Pytorch: 1.12.0
-* pytorch-lightning==1.6.1
+* pytorch-lightning: 1.6.1
 ```
 pip install -r requirements.txt
 ```
